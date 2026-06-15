@@ -1,0 +1,13 @@
+# No dot directories anywhere
+.*/
+
+# Local/external knowledge stores
+knowledge/
+knowledge-sources/
+
+# Common junk
+.DS_Store
+__pycache__/
+*.pyc
+*.tmp
+*.swp
