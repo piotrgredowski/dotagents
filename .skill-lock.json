@@ -10,33 +10,6 @@
       "installedAt": "2026-04-04T07:51:25.891Z",
       "updatedAt": "2026-06-01T23:05:58.279Z"
     },
-    "remotion-best-practices": {
-      "source": "remotion-dev/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/remotion-dev/skills.git",
-      "skillPath": "skills/remotion/SKILL.md",
-      "skillFolderHash": "77a2a3ec2e2eb957b5e82913fbc1f2cebce5d193",
-      "installedAt": "2026-04-09T07:31:48.800Z",
-      "updatedAt": "2026-06-01T23:06:00.053Z"
-    },
-    "caveman-commit": {
-      "source": "JuliusBrussee/caveman",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
-      "skillPath": "skills/caveman-commit/SKILL.md",
-      "skillFolderHash": "6ba13fa3503e9607eed8f94828b524510d83b7ef",
-      "installedAt": "2026-04-11T08:59:23.166Z",
-      "updatedAt": "2026-06-12T13:49:24.955Z"
-    },
-    "caveman-review": {
-      "source": "JuliusBrussee/caveman",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
-      "skillPath": "skills/caveman-review/SKILL.md",
-      "skillFolderHash": "2d9762b7aec395b9713fde57fb8965bc3bbd2c3f",
-      "installedAt": "2026-04-11T08:59:23.559Z",
-      "updatedAt": "2026-06-01T23:06:03.669Z"
-    },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
@@ -187,34 +160,16 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-05-27T08:45:40.723Z",
       "updatedAt": "2026-05-27T08:45:40.723Z"
-    },
-    "penpot-uiux-design": {
-      "source": "github/awesome-copilot",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/github/awesome-copilot.git",
-      "skillPath": "skills/penpot-uiux-design/SKILL.md",
-      "skillFolderHash": "cc4e1cf59e27f429306ac6fc6f66373e3b6b1277",
-      "installedAt": "2026-06-02T11:31:28.479Z",
-      "updatedAt": "2026-06-02T11:31:28.479Z"
     }
   },
   "dismissed": {
     "findSkillsPrompt": true
   },
   "lastSelectedAgents": [
-    "amp",
     "antigravity",
-    "cline",
     "codex",
-    "cursor",
-    "deepagents",
-    "dexto",
-    "firebender",
     "gemini-cli",
-    "github-copilot",
-    "kimi-cli",
     "opencode",
-    "warp",
     "zed",
     "pi",
     "droid"
