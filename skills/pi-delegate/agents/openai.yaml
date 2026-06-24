@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pi Delegate"
+  short_description: "Delegate bounded coding tasks to Pi"
+  default_prompt: "Use $pi-delegate to give Pi a bounded coding task with acceptance criteria, then review the result."
