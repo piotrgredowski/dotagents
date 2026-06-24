@@ -77,10 +77,11 @@ Recommended defaults:
 
 - Auto-pick: uses `api` when `OPENAI_API_KEY` is set, otherwise `browser`.
 - Browser engine supports GPT + Gemini only; use `--engine api` for Claude/Grok/Codex or multi-model runs.
+- `--copy-profile <chrome-user-data-dir>`: reuse your **already signed-in** Chrome session with no manual login — copies the profile to a throwaway dir, launches with the real Keychain so its cookies decrypt, runs, then always deletes the copy. Failed/incomplete runs are deleted too, so they cannot be kept, reattached, or sent to an existing/remote browser. e.g. `oracle --engine browser --copy-profile "$HOME/Library/Application Support/Google/Chrome" -p "<task>"`. macOS/Linux; needs `rsync`.
 - **API runs require explicit user consent** before starting because they incur usage costs.
 - Browser attachments:
   - `--browser-attachments auto|never|always` (auto pastes inline up to ~60k chars then uploads).
-  - Add `--browser-bundle-files --browser-bundle-format zip` to upload many text files as one ZIP while preserving file names.
+  - Add `--browser-bundle-files --browser-bundle-format auto|zip` to upload many files as one bundle; ZIP bundles preserve original file bytes.
 - Remote browser host (signed-in machine runs automation):
   - Host: `oracle serve --host 0.0.0.0 --port 9473 --token <secret>`
   - Client: `oracle --engine browser --remote-host <host:port> --remote-token <secret> -p "<task>" --file "src/**"`
