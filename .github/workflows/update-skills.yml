@@ -1,0 +1,61 @@
+name: Update skills
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-skills
+  cancel-in-progress: false
+
+jobs:
+  update-skills:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Update skills from lockfile sources
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          HOME: ${{ runner.temp }}/skills-home
+        run: |
+          mkdir -p "$HOME/.agents"
+          cp .skill-lock.json "$HOME/.agents/.skill-lock.json"
+          rm -rf "$HOME/.agents/skills"
+          cp -R skills "$HOME/.agents/skills"
+
+          update_log="$RUNNER_TEMP/skills-update.log"
+          set -o pipefail
+          npx -y skills update -g -y 2>&1 | tee "$update_log"
+          if grep -E "Failed to fetch tree|✗ Failed" "$update_log"; then
+            echo "::error::skills update reported source fetch failures"
+            exit 1
+          fi
+
+          rm -rf skills
+          cp -R "$HOME/.agents/skills" skills
+          cp "$HOME/.agents/.skill-lock.json" .skill-lock.json
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: update-skills
+          delete-branch: true
+          commit-message: "chore(skills): update skills"
+          title: "chore(skills): update skills"
+          body: |
+            Automated daily update of skills tracked in `.skill-lock.json`.
+
+            This PR was created by the `Update skills` workflow.

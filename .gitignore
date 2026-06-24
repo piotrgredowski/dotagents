@@ -1,5 +1,8 @@
 # No dot directories anywhere
 .*/
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
 
 # Local/external knowledge stores
 knowledge/
