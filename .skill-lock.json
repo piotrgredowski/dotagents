@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "f85a479843f1972ebc9e45229b65f466e9e08c59",
+      "skillFolderHash": "189d8bc939001cd0ded5d0a65d5caf05a20bd76d",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-06-30T04:42:29.329Z"
+      "updatedAt": "2026-07-02T04:41:07.091Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -78,9 +78,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/tdd/SKILL.md",
-      "skillFolderHash": "0594874449739c280ed6b7878a8ab1252c5ae228",
+      "skillFolderHash": "9d29becb522dcdd0ed73c866a23f7dd40ba08fa4",
       "installedAt": "2026-05-21T14:45:19.975Z",
-      "updatedAt": "2026-06-30T04:42:32.348Z"
+      "updatedAt": "2026-07-02T04:41:08.252Z"
     },
     "improve-codebase-architecture": {
       "source": "mattpocock/skills",
