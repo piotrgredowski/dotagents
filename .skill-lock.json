@@ -306,6 +306,24 @@
       "skillFolderHash": "8e138d6b06a52aeaf5f329be7a0c8298e06f62e5",
       "installedAt": "2026-07-09T12:24:03.591Z",
       "updatedAt": "2026-07-18T05:36:16.155Z"
+    },
+    "batch-grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/in-progress/batch-grill-me/SKILL.md",
+      "skillFolderHash": "f2c0125db05db4d8f905a9423af308c476e2e4d5",
+      "installedAt": "2026-07-18T10:24:34.088Z",
+      "updatedAt": "2026-07-18T10:24:34.088Z"
+    },
+    "i-have-adhd": {
+      "source": "ayghri/i-have-adhd",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ayghri/i-have-adhd.git",
+      "skillPath": "skills/i-have-adhd/SKILL.md",
+      "skillFolderHash": "73f48b9a8b7942b6a9f4dbe6bfff45faeda7cc3c",
+      "installedAt": "2026-07-20T17:56:26.977Z",
+      "updatedAt": "2026-07-20T17:56:26.977Z"
     }
   },
   "dismissed": {
