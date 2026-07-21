@@ -11,13 +11,14 @@ A collection of **skills** (capabilities) for coding agents — such as [Pi](htt
   - `grilling` — relentless interviews to stress-test plans/designs,
   - `pi-delegate` — delegating bounded subtasks to the local Pi agent.
 - `.skill-lock.json` — a lockfile describing which skills come from which repositories and at which version. This file drives the automatic sync.
-- `.github/workflows/update-skills.yml` — a GitHub Actions workflow (daily) running `skills update`, which refreshes skills per the lockfile and opens a PR with the diff.
+- `scripts/update-skills.sh` — safely updates an isolated copy of the skills and lockfile, then replaces the tracked files only after a successful update.
+- `.github/workflows/update-skills.yml` — a GitHub Actions workflow (daily) that runs the update script and opens a PR with the diff.
 - `knowledge/` and `knowledge-sources/` — local knowledge stores (gitignored, never committed).
 
 ## How it works
 
 1. Skills are described in `.skill-lock.json` with `source`, `sourceType`, and a folder hash.
-2. The workflow runs `npx skills update -g -y`, fetches fresh versions from upstream, and updates `skills/` and the lockfile.
+2. The update script runs `npx skills update -g -y` against a temporary copy, fetches fresh versions from upstream, and replaces `skills/` and the lockfile only if the update completes without source-fetch errors.
 3. A pull request (`update-skills`) shows what changed and lets you review it.
 4. Custom skills are added manually to `skills/` (without a lockfile entry — those are not overwritten by automation).
 
@@ -25,7 +26,7 @@ A collection of **skills** (capabilities) for coding agents — such as [Pi](htt
 
 ```bash
 # update skills manually (locally)
-npx skills update -g -y
+./scripts/update-skills.sh
 ```
 
 ## Conventions

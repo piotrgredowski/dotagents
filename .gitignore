@@ -3,6 +3,7 @@
 !.github/
 !.github/workflows/
 !.github/workflows/*.yml
+.skills-update-tmp.*
 
 # Local/external knowledge stores
 knowledge/

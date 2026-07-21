@@ -29,24 +29,7 @@ jobs:
       - name: Update skills from lockfile sources
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          HOME: ${{ runner.temp }}/skills-home
-        run: |
-          mkdir -p "$HOME/.agents"
-          cp .skill-lock.json "$HOME/.agents/.skill-lock.json"
-          rm -rf "$HOME/.agents/skills"
-          cp -R skills "$HOME/.agents/skills"
-
-          update_log="$RUNNER_TEMP/skills-update.log"
-          set -o pipefail
-          npx -y skills update -g -y 2>&1 | tee "$update_log"
-          if grep -E "Failed to fetch tree|✗ Failed" "$update_log"; then
-            echo "::error::skills update reported source fetch failures"
-            exit 1
-          fi
-
-          rm -rf skills
-          cp -R "$HOME/.agents/skills" skills
-          cp "$HOME/.agents/.skill-lock.json" .skill-lock.json
+        run: ./scripts/update-skills.sh
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v8
