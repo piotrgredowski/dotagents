@@ -32,6 +32,7 @@ jobs:
         run: ./scripts/update-skills.sh
 
       - name: Create pull request
+        id: create-pull-request
         uses: peter-evans/create-pull-request@v8
         with:
           branch: update-skills
@@ -42,3 +43,9 @@ jobs:
             Automated daily update of skills tracked in `.skill-lock.json`.
 
             This PR was created by the `Update skills` workflow.
+
+      - name: Enable pull request auto-merge
+        if: steps.create-pull-request.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr merge "${{ steps.create-pull-request.outputs.pull-request-number }}" --auto --squash
