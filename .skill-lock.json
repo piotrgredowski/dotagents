@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "397008a7c3747f619c2f945e228f542eed47242a",
+      "skillFolderHash": "641352873438a89f751ff828893d20598cb6c1ee",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-07-21T13:47:52.594Z"
+      "updatedAt": "2026-07-26T06:14:52.125Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -321,9 +321,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/ayghri/i-have-adhd.git",
       "skillPath": "skills/i-have-adhd/SKILL.md",
-      "skillFolderHash": "75e478270cc583b7f7b75c3cdac820d053970acc",
+      "skillFolderHash": "5f9aed51e473d34f38962ac270ada0b1e3ff2a4a",
       "installedAt": "2026-07-20T17:56:26.977Z",
-      "updatedAt": "2026-07-21T13:47:55.601Z"
+      "updatedAt": "2026-07-26T06:14:54.420Z"
     }
   },
   "dismissed": {
