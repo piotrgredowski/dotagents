@@ -87,9 +87,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
-      "skillFolderHash": "bce229692e60dff3462e49bc5e774e83bef348e6",
+      "skillFolderHash": "6a971d1f5b109ac817e18c0f0419c2a32d60f26a",
       "installedAt": "2026-05-21T14:45:37.017Z",
-      "updatedAt": "2026-07-18T05:36:01.723Z"
+      "updatedAt": "2026-08-07T05:02:22.063Z"
     },
     "tmux": {
       "source": "steipete/clawdis",
@@ -186,27 +186,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/code-review/SKILL.md",
-      "skillFolderHash": "956ad60120cc6e88a9a879a8eaa26e19026b974d",
+      "skillFolderHash": "7a2057dcc514dc024d4e6bf8ad78021b97f229ae",
       "installedAt": "2026-07-09T12:24:03.574Z",
-      "updatedAt": "2026-08-06T06:04:35.546Z"
+      "updatedAt": "2026-08-07T05:02:23.337Z"
     },
     "codebase-design": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/codebase-design/SKILL.md",
-      "skillFolderHash": "7347168e8de2de105e2e55f07ecb33d25fd56f44",
+      "skillFolderHash": "20b7cd1dd1fe5b0bd37ba72649f3a29375574b5b",
       "installedAt": "2026-07-09T12:24:03.575Z",
-      "updatedAt": "2026-07-18T05:36:07.271Z"
+      "updatedAt": "2026-08-07T05:02:24.632Z"
     },
     "diagnosing-bugs": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
-      "skillFolderHash": "27bf00e3ccc53491e938e8b5602be39238ce68f3",
+      "skillFolderHash": "463c81def888fefa77b894837d301d9ed70e0994",
       "installedAt": "2026-07-09T12:24:03.576Z",
-      "updatedAt": "2026-07-18T05:36:08.252Z"
+      "updatedAt": "2026-08-07T05:02:25.987Z"
     },
     "domain-modeling": {
       "source": "mattpocock/skills",
@@ -321,9 +321,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/ayghri/i-have-adhd.git",
       "skillPath": "skills/i-have-adhd/SKILL.md",
-      "skillFolderHash": "5f9aed51e473d34f38962ac270ada0b1e3ff2a4a",
+      "skillFolderHash": "2c4c2b7fd5b0f9a4071a780a536e63816e0e8694",
       "installedAt": "2026-07-20T17:56:26.977Z",
-      "updatedAt": "2026-07-26T06:14:54.420Z"
+      "updatedAt": "2026-08-07T05:02:27.372Z"
     }
   },
   "dismissed": {
