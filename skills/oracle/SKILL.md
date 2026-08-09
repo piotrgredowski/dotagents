@@ -22,7 +22,7 @@ Recommended defaults:
 - Engine: browser (`--engine browser`)
 - Base Sol: `--model gpt-5.6-sol`
 - Base Sol maximum reasoning: `--browser-thinking-time extra-high` (Extra High)
-- Explicit Pro effort on GPT-5.6 Sol: `--browser-thinking-time heavy` (Pro UI)
+- Explicit Pro effort on GPT-5.6 Sol: `--browser-thinking-time pro` (fails closed if Pro cannot be confirmed)
 - Browser Pro: `--model gpt-5-pro`, without a thinking-time flag
 - API Pro maximum reasoning: `--model gpt-5.6-sol --reasoning-mode pro --reasoning-effort max`
 - Fallback: explicitly use `--model gpt-5.5-pro` when GPT-5.6 is unavailable

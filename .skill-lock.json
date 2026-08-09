@@ -159,9 +159,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/steipete/oracle.git",
       "skillPath": "skills/oracle/SKILL.md",
-      "skillFolderHash": "2b7994b4edaefbdc8fa41b66594f22e310e2d881",
+      "skillFolderHash": "138e6cdfaf2855f7393b9ffce28d7d6c1091e988",
       "installedAt": "2026-06-15T15:01:40.968Z",
-      "updatedAt": "2026-08-06T06:04:40.170Z"
+      "updatedAt": "2026-08-09T04:36:39.623Z"
     },
     "summarize": {
       "source": "steipete/clawdis",
