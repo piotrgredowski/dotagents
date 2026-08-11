@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-registry/SKILL.md",
-      "skillFolderHash": "b03a35faf338f4be14c4ac65f3f1fa2d29ea48ad",
+      "skillFolderHash": "c9f76496706aa566ddf6d53429cc05473b2e10fc",
       "installedAt": "2026-05-08T09:18:03.577Z",
-      "updatedAt": "2026-07-18T05:35:56.754Z"
+      "updatedAt": "2026-08-11T04:39:49.327Z"
     },
     "hyperframes-media": {
       "source": "heygen-com/hyperframes",
@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "0032af6148133859d0e8cb99b28b353d7305a1aa",
+      "skillFolderHash": "b862a63fdeb054cd85076fff559c60aaec050869",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-08-01T06:10:08.257Z"
+      "updatedAt": "2026-08-11T04:39:51.097Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -321,9 +321,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/ayghri/i-have-adhd.git",
       "skillPath": "skills/i-have-adhd/SKILL.md",
-      "skillFolderHash": "2c4c2b7fd5b0f9a4071a780a536e63816e0e8694",
+      "skillFolderHash": "871e88cbe9b167670c170c53c8173c68609a2ae9",
       "installedAt": "2026-07-20T17:56:26.977Z",
-      "updatedAt": "2026-08-07T05:02:27.372Z"
+      "updatedAt": "2026-08-11T04:39:52.286Z"
     }
   },
   "dismissed": {
