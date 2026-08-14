@@ -44,7 +44,7 @@ This version supports GPT-5.6 on both surfaces, but Pro selection differs:
 For base Sol, use:
 
 ```bash
-oracle --engine browser --model gpt-5.6-sol \
+oracle --engine browser --browser-manual-login --model gpt-5.6-sol \
   --browser-thinking-time extra-high \
   -p "<task>" --file "src/**"
 ```
@@ -109,7 +109,7 @@ and a live browser run records strict GPT-5.6 selection evidence.
   - `npx -y @steipete/oracle --dry-run summary --files-report -p "<task>" --file "src/**"`
 
 - Browser run:
-  - `oracle --engine browser --model gpt-5.6-sol --browser-thinking-time extra-high -p "<task>" --file "src/**"`
+  - `oracle --engine browser --browser-manual-login --model gpt-5.6-sol --browser-thinking-time extra-high -p "<task>" --file "src/**"`
 
 - Manual paste fallback:
   - `npx -y @steipete/oracle --render-markdown --copy-markdown -p "<task>" --file "src/**"`

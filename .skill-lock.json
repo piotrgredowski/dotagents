@@ -60,9 +60,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
-      "skillFolderHash": "3d66a0486c1000e6da51da67b0cb917be22ea8dd",
+      "skillFolderHash": "5cca2c41be4f7a85c3d8ff95e9bd42de9486745e",
       "installedAt": "2026-05-21T14:43:44.530Z",
-      "updatedAt": "2026-08-01T06:10:13.354Z"
+      "updatedAt": "2026-08-14T05:02:22.042Z"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
@@ -159,9 +159,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/steipete/oracle.git",
       "skillPath": "skills/oracle/SKILL.md",
-      "skillFolderHash": "f311d56ee97abde2bcdb79ae50675b21156a1d11",
+      "skillFolderHash": "26cca2ea90a18f55ea56bddd7e5fb318a67f466c",
       "installedAt": "2026-06-15T15:01:40.968Z",
-      "updatedAt": "2026-08-10T04:53:42.803Z"
+      "updatedAt": "2026-08-14T05:02:24.958Z"
     },
     "summarize": {
       "source": "steipete/clawdis",
@@ -213,9 +213,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/domain-modeling/SKILL.md",
-      "skillFolderHash": "959e63161ff78b4b1cd553b2c0e09e0c68418e5f",
+      "skillFolderHash": "05c3244ec75b7548bbc2b635b0624bb9f70369c3",
       "installedAt": "2026-07-09T12:24:03.577Z",
-      "updatedAt": "2026-07-18T05:36:09.008Z"
+      "updatedAt": "2026-08-14T05:02:23.541Z"
     },
     "grilling": {
       "source": "mattpocock/skills",
