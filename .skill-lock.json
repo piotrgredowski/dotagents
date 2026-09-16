@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "8721d1bb7068c9b53047beba61ea74142c0f2753",
+      "skillFolderHash": "6eafcddd84fa0e39c301d81815a3190241fd6aed",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-09-14T08:55:12.983Z"
+      "updatedAt": "2026-09-16T08:35:12.070Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
