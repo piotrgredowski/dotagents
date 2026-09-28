@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-registry/SKILL.md",
-      "skillFolderHash": "46a050393b88f2bf73ef1d3e3c9e8dbcc1c90ab1",
+      "skillFolderHash": "9dda0af0da4e740c8d622ccff5bfccc096062a3d",
       "installedAt": "2026-05-08T09:18:03.577Z",
-      "updatedAt": "2026-09-25T08:49:27.703Z"
+      "updatedAt": "2026-09-28T09:46:21.380Z"
     },
     "hyperframes-media": {
       "source": "heygen-com/hyperframes",
@@ -51,18 +51,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "29e2604265ec8bc5bf78f0510748b05232febd48",
+      "skillFolderHash": "785c307458c5b4a92cba8a73652ffd54a99f4c44",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-09-26T08:35:32.495Z"
+      "updatedAt": "2026-09-28T09:46:22.293Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
-      "skillFolderHash": "c950114caecf00e61f979187bf9f2f44807a4ea8",
+      "skillFolderHash": "48a35ed8010c1667ad9ab22c9c307949ac4eeb6f",
       "installedAt": "2026-05-21T14:43:44.530Z",
-      "updatedAt": "2026-09-27T09:15:24.381Z"
+      "updatedAt": "2026-09-28T09:46:26.088Z"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
