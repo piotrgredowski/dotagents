@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "a829339380dcde41f2d327f9a4975f43db99a559",
+      "skillFolderHash": "92152484b5a460b8191e1e4f7c15f86e17c6ee0f",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-09-29T09:49:24.194Z"
+      "updatedAt": "2026-10-03T09:09:10.249Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -96,9 +96,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/steipete/clawdis.git",
       "skillPath": "skills/tmux/SKILL.md",
-      "skillFolderHash": "89786e2a19d0c04cbf93221bb0434f3b42ec7748",
+      "skillFolderHash": "dd5ddfca6522c8d2038bb828f12fbbecbdc7c982",
       "installedAt": "2026-05-21T15:01:34.242Z",
-      "updatedAt": "2026-09-25T08:49:42.840Z"
+      "updatedAt": "2026-10-03T09:09:21.170Z"
     },
     "grill-me": {
       "source": "mattpocock/skills",
