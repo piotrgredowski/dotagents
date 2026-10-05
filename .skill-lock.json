@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-registry/SKILL.md",
-      "skillFolderHash": "9dda0af0da4e740c8d622ccff5bfccc096062a3d",
+      "skillFolderHash": "44e994d09c67b38791680e8f3ee33d454f7b98e2",
       "installedAt": "2026-05-08T09:18:03.577Z",
-      "updatedAt": "2026-09-28T09:46:21.380Z"
+      "updatedAt": "2026-10-05T10:26:12.891Z"
     },
     "hyperframes-media": {
       "source": "heygen-com/hyperframes",
@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "92152484b5a460b8191e1e4f7c15f86e17c6ee0f",
+      "skillFolderHash": "486c7d2cbb132c78ae102c9c188333ddbd0314ee",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-10-03T09:09:10.249Z"
+      "updatedAt": "2026-10-05T10:26:14.056Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -177,9 +177,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/ask-matt/SKILL.md",
-      "skillFolderHash": "8ab83b2d681b3a343b869e0840535ecf832a17b5",
+      "skillFolderHash": "da068f2392e1144469cbc602ffff96ef47881a88",
       "installedAt": "2026-07-09T12:24:03.573Z",
-      "updatedAt": "2026-09-30T09:42:12.297Z"
+      "updatedAt": "2026-10-05T10:26:15.213Z"
     },
     "code-review": {
       "source": "mattpocock/skills",
