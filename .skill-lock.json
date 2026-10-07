@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "486c7d2cbb132c78ae102c9c188333ddbd0314ee",
+      "skillFolderHash": "3a7442f9bc799bd9a197258dc85799f3881703f0",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-10-05T10:26:14.056Z"
+      "updatedAt": "2026-10-07T10:15:54.322Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -177,9 +177,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/ask-matt/SKILL.md",
-      "skillFolderHash": "da068f2392e1144469cbc602ffff96ef47881a88",
+      "skillFolderHash": "d6a0d9bf3cdc78cbfcbd6466ac5fd3deffb52877",
       "installedAt": "2026-07-09T12:24:03.573Z",
-      "updatedAt": "2026-10-05T10:26:15.213Z"
+      "updatedAt": "2026-10-07T10:15:56.852Z"
     },
     "code-review": {
       "source": "mattpocock/skills",
@@ -231,18 +231,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/handoff/SKILL.md",
-      "skillFolderHash": "2242e8f05424b8c2ae94194a90d97b88d16108ec",
+      "skillFolderHash": "ce24892bd2d4b9e7fd5ac9b95c03175e18bef388",
       "installedAt": "2026-07-09T12:24:03.580Z",
-      "updatedAt": "2026-08-16T03:58:50.215Z"
+      "updatedAt": "2026-10-07T10:15:59.043Z"
     },
     "implement": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/implement/SKILL.md",
-      "skillFolderHash": "f07d230f645fc9ac390cf13a450bbff12ad791a3",
+      "skillFolderHash": "27a09574c533d4b9a66c7b2b43cdfeeeb9f415b5",
       "installedAt": "2026-07-09T12:24:03.581Z",
-      "updatedAt": "2026-07-18T05:36:11.016Z"
+      "updatedAt": "2026-10-07T10:16:01.320Z"
     },
     "research": {
       "source": "mattpocock/skills",
@@ -276,9 +276,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/to-tickets/SKILL.md",
-      "skillFolderHash": "b32c94e5a51c24ee9c41fcb7fe9ea9fff9af6369",
+      "skillFolderHash": "2dee20ad722a31c04ededf9f2d83842473573045",
       "installedAt": "2026-07-09T12:24:03.587Z",
-      "updatedAt": "2026-08-20T03:58:18.800Z"
+      "updatedAt": "2026-10-07T10:16:04.403Z"
     },
     "wayfinder": {
       "source": "mattpocock/skills",
@@ -321,9 +321,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/ayghri/i-have-adhd.git",
       "skillPath": "skills/i-have-adhd/SKILL.md",
-      "skillFolderHash": "72dc6e3e9d0f8d906579a235edb7b2a402d7b8e1",
+      "skillFolderHash": "759f1e56d0d2fdd3819d2a53b81e72767c08d914",
       "installedAt": "2026-07-20T17:56:26.977Z",
-      "updatedAt": "2026-09-11T08:03:09.642Z"
+      "updatedAt": "2026-10-07T10:16:05.987Z"
     },
     "show-me": {
       "source": "humanlayer/skills",
