@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-registry/SKILL.md",
-      "skillFolderHash": "ca95458584add658afa2a9eaa986795949970103",
+      "skillFolderHash": "11ed312989f8ae0a41f461f5d47f2f46a6d32eb4",
       "installedAt": "2026-05-08T09:18:03.577Z",
-      "updatedAt": "2026-10-22T08:36:17.798Z"
+      "updatedAt": "2026-10-28T09:39:27.650Z"
     },
     "hyperframes-media": {
       "source": "heygen-com/hyperframes",
@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "1d6b42b98e4186a9c2ce57658cc20ad32d45fc6c",
+      "skillFolderHash": "868ad5e85d916e53dd26c18ddeb924869abfbb29",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-10-27T08:59:21.652Z"
+      "updatedAt": "2026-10-28T09:39:29.093Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
