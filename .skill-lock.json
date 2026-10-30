@@ -6,9 +6,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "82def67855a0d2aad7794207951820fa5422fdb0",
+      "skillFolderHash": "aee3afd3dd9c879a14816dd6dca77c938f8c9c10",
       "installedAt": "2026-04-04T07:51:25.891Z",
-      "updatedAt": "2026-08-24T04:04:52.751Z"
+      "updatedAt": "2026-10-30T10:00:09.405Z"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "f81205cdb9d7437b87abb5f2f8936504dfc10b78",
+      "skillFolderHash": "dbd397a164758078aef09c016acc1f05d291b598",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-10-29T09:57:43.290Z"
+      "updatedAt": "2026-10-30T10:00:11.458Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -87,9 +87,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
-      "skillFolderHash": "39bd9cc130f7dfcc4e3ea0b3613f6ebed0d0ad2b",
+      "skillFolderHash": "587147dd230da299cc5e84971cb0a33f6676f8a6",
       "installedAt": "2026-05-21T14:45:37.017Z",
-      "updatedAt": "2026-09-30T09:42:10.618Z"
+      "updatedAt": "2026-10-30T10:00:12.363Z"
     },
     "tmux": {
       "source": "steipete/clawdis",
@@ -186,18 +186,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/code-review/SKILL.md",
-      "skillFolderHash": "fee7bb5fdddc069d58cbea09b2c36b5a859eac05",
+      "skillFolderHash": "a8ef561571acbb611de8ff19ba6da75b197c63a8",
       "installedAt": "2026-07-09T12:24:03.574Z",
-      "updatedAt": "2026-10-08T10:34:41.824Z"
+      "updatedAt": "2026-10-30T10:00:13.348Z"
     },
     "codebase-design": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/codebase-design/SKILL.md",
-      "skillFolderHash": "07ba1cd60efc12d0d3a083005c1d9651cf15e39a",
+      "skillFolderHash": "4cbe1c131e1ea54109cb1e4e5f3c505810db6606",
       "installedAt": "2026-07-09T12:24:03.575Z",
-      "updatedAt": "2026-09-30T09:42:13.161Z"
+      "updatedAt": "2026-10-30T10:00:14.820Z"
     },
     "diagnosing-bugs": {
       "source": "mattpocock/skills",
@@ -222,9 +222,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/grilling/SKILL.md",
-      "skillFolderHash": "28aceb4c9567b985cb47f7db88cf23c9f33af8b8",
+      "skillFolderHash": "f551b6e0d219fdda0b6abf277f8f915b3127d1e9",
       "installedAt": "2026-07-09T12:24:03.579Z",
-      "updatedAt": "2026-10-08T10:34:43.718Z"
+      "updatedAt": "2026-10-30T10:00:15.666Z"
     },
     "handoff": {
       "source": "mattpocock/skills",
@@ -249,9 +249,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/research/SKILL.md",
-      "skillFolderHash": "0a6796c5667e95ed2301ba7381c123b4acb2ae1a",
+      "skillFolderHash": "2f8f36af48796faed5c687c75bb650071631a984",
       "installedAt": "2026-07-09T12:24:03.584Z",
-      "updatedAt": "2026-08-20T03:58:16.103Z"
+      "updatedAt": "2026-10-30T10:00:16.853Z"
     },
     "teach": {
       "source": "mattpocock/skills",
@@ -285,9 +285,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/wayfinder/SKILL.md",
-      "skillFolderHash": "32b0ce970b1394ede47116e1d3e07f9ccc87591f",
+      "skillFolderHash": "25da74eadc3e388b2f2a2cc716f3d44b2fb9dfe0",
       "installedAt": "2026-07-09T12:24:03.589Z",
-      "updatedAt": "2026-10-08T10:34:47.325Z"
+      "updatedAt": "2026-10-30T10:00:18.194Z"
     },
     "writing-great-skills": {
       "source": "mattpocock/skills",
