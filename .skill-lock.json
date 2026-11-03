@@ -6,9 +6,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "aee3afd3dd9c879a14816dd6dca77c938f8c9c10",
+      "skillFolderHash": "29ba9c12789b1c54ab76ad40e2472e646d141b85",
       "installedAt": "2026-04-04T07:51:25.891Z",
-      "updatedAt": "2026-10-30T10:00:09.405Z"
+      "updatedAt": "2026-11-03T10:53:51.638Z"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
@@ -17,7 +17,7 @@
       "skillPath": "skills/web-design-guidelines/SKILL.md",
       "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
       "installedAt": "2026-05-06T16:19:21.300Z",
-      "updatedAt": "2026-05-06T16:19:21.300Z"
+      "updatedAt": "2026-11-03T10:53:51.686Z"
     },
     "building-components": {
       "source": "vercel/components.build",
@@ -26,7 +26,7 @@
       "skillPath": "skills/building-components/SKILL.md",
       "skillFolderHash": "b7f8c5d9010b2f8cd1b4c9f250886264d5ce6d15",
       "installedAt": "2026-05-06T16:19:29.930Z",
-      "updatedAt": "2026-05-06T16:19:29.930Z"
+      "updatedAt": "2026-11-03T10:53:52.166Z"
     },
     "hyperframes-registry": {
       "source": "heygen-com/hyperframes",
@@ -51,18 +51,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "aae28e5e151c8475ae87b7458ac92fb4166e18ff",
+      "skillFolderHash": "25aafb9b197d1cf92abcc3b2e05800f4395035dd",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-11-01T10:27:16.478Z"
+      "updatedAt": "2026-11-03T10:53:52.389Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
-      "skillFolderHash": "2fdb5a971f230466ee625952e01edd815ac117e6",
+      "skillFolderHash": "e421a9fda8e43f1a8dd7f42cbc655e5bca93ee8c",
       "installedAt": "2026-05-21T14:43:44.530Z",
-      "updatedAt": "2026-11-01T10:27:21.276Z"
+      "updatedAt": "2026-11-03T10:53:54.868Z"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
@@ -71,7 +71,7 @@
       "skillPath": "skills/composition-patterns/SKILL.md",
       "skillFolderHash": "bf90d0a4b83ea054653350f9c67f6de235d3a368",
       "installedAt": "2026-05-21T14:44:32.553Z",
-      "updatedAt": "2026-05-21T14:44:32.553Z"
+      "updatedAt": "2026-11-03T10:53:51.914Z"
     },
     "tdd": {
       "source": "mattpocock/skills",
@@ -170,7 +170,7 @@
       "skillPath": "skills/summarize/SKILL.md",
       "skillFolderHash": "1fbc6f703b852072d57496300bd2a078309e9c7d",
       "installedAt": "2026-06-15T15:12:45.248Z",
-      "updatedAt": "2026-06-15T15:12:45.248Z"
+      "updatedAt": "2026-11-03T10:53:55.866Z"
     },
     "ask-matt": {
       "source": "mattpocock/skills",
