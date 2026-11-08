@@ -51,18 +51,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "78a51b038e1a8ec04cb6a2538095faf565164dd5",
+      "skillFolderHash": "c60cf645c62c0871fa84ee7403f5dad177b37d2d",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-11-07T10:08:19.174Z"
+      "updatedAt": "2026-11-08T10:23:11.846Z"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
-      "skillFolderHash": "039881fb83556dfeb60b3cce276392ed47eb491b",
+      "skillFolderHash": "d69b734e576aa6b430bc11a435aa11d29bc92c8e",
       "installedAt": "2026-05-21T14:43:44.530Z",
-      "updatedAt": "2026-11-05T10:55:47.954Z"
+      "updatedAt": "2026-11-08T10:23:13.987Z"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
@@ -96,9 +96,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/steipete/clawdis.git",
       "skillPath": "skills/tmux/SKILL.md",
-      "skillFolderHash": "8a9001234fcef39c4ac21d255bf87997a889a86c",
+      "skillFolderHash": "09d6035ee8f46045cb4408c2cec0236e35bafb7d",
       "installedAt": "2026-05-21T15:01:34.242Z",
-      "updatedAt": "2026-11-07T10:08:20.341Z"
+      "updatedAt": "2026-11-08T10:23:14.756Z"
     },
     "grill-me": {
       "source": "mattpocock/skills",
