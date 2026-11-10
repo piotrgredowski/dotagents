@@ -96,9 +96,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/steipete/clawdis.git",
       "skillPath": "skills/tmux/SKILL.md",
-      "skillFolderHash": "09d6035ee8f46045cb4408c2cec0236e35bafb7d",
+      "skillFolderHash": "21e3796e61e2e8e695f78a24a44678d8ada917ec",
       "installedAt": "2026-05-21T15:01:34.242Z",
-      "updatedAt": "2026-11-08T10:23:14.756Z"
+      "updatedAt": "2026-11-10T11:12:32.797Z"
     },
     "grill-me": {
       "source": "mattpocock/skills",
