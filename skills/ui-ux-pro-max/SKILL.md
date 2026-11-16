@@ -95,7 +95,7 @@ python3 "$SCRIPT" "beauty spa wellness service" --design-system -p "Serenity Spa
 
 ### Step 2a: Choose a direction, don't accept the first result
 
-When no design spec exists yet, do not persist the first `--design-system` result. Generate 2–3 contrasting directions (different keywords, at least one dial), give each a one-line reason tied to the product, and let the user pick; persist only the chosen one (Step 2b). Treat these as warning signs of a generic query, not as a verdict: stock blue (#2563EB / #3B82F6) with an orange CTA, heading font equal to body font, a landing pattern (Hero + Features + CTA) for an app screen (dashboard, settings, admin). If several appear, make the query concrete (industry, audience, mood, one reference product) before offering directions.
+When no design spec exists yet, do not persist the first `--design-system` result. Generate 2–3 contrasting directions (different keywords, at least one dial), give each a one-line reason tied to the product, and let the user pick; then re-run the chosen direction's query with `--persist` (Step 2b). The exploration runs themselves stay unpersisted. Treat these as warning signs of a generic query, not as a verdict: stock blue (#2563EB / #3B82F6) with an orange CTA, heading font equal to body font, a landing pattern (Hero + Features + CTA) for an app screen (dashboard, settings, admin). If several appear, make the query concrete (industry, audience, mood, one reference product) before offering directions.
 
 ### Step 2b: Persist Design System (Master + Overrides Pattern)
 
@@ -105,7 +105,7 @@ To save the design system for retrieval across sessions, add `--persist` **and a
 python3 "$SCRIPT" "<query>" --design-system --persist -p "Project Name" --output-dir "<project-root>"
 ```
 
-Persistence is not optional: without it every session re-invents the look. Whenever `--design-system` runs for a project that has no existing design system, always pass `--persist` with `--output-dir` at the project root.
+Persistence is not optional: without it every session re-invents the look. Whenever `--design-system` runs to produce the project's design system, pass `--persist` with `--output-dir` at the project root — except the Step 2a exploration runs: those must not pass `--persist`, because the first persisted run creates `MASTER.md`, and a later run cannot overwrite it without `--force`.
 
 This creates:
 - `design-system/<project-slug>/MASTER.md` — Global Source of Truth
