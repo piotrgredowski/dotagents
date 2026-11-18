@@ -52,10 +52,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "f6e53c5faa5eb2ebeb5575b5c2a7d52e8b83a622",
+      "skillFolderHash": "769751493e69d3209c17b85102ece222d1088731",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-11-17T11:51:48.966Z",
-      "commit": "7a0bec682809f18ee37d5d4e085f73afaca6a9b1"
+      "updatedAt": "2026-11-18T11:41:15.277Z",
+      "commit": "9acf26868015f359212cb3916db69ac3f9c7aa14"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
