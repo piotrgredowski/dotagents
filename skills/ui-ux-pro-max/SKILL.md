@@ -36,13 +36,17 @@ For the full rule list per category (all 130 UX guidelines with rationale), read
 
 ## Running the search tool
 
-The search script lives inside this skill's own directory, not the project directory. Always invoke it by its full path — do not assume a particular working directory:
+The search script lives inside this skill's own directory, not the project directory. Prefer the directory this SKILL.md was loaded from (its `scripts/search.py`). When you do not know it, resolve a fallback once per session — plugin install first, standalone install second — and do not assume a particular working directory:
 
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "<query>" --domain <domain>
+SCRIPT="${CLAUDE_PLUGIN_ROOT:+$CLAUDE_PLUGIN_ROOT/.claude/skills/ui-ux-pro-max/scripts/search.py}"
+[ -n "$SCRIPT" ] && [ -f "$SCRIPT" ] || SCRIPT="$HOME/.agents/skills/ui-ux-pro-max/scripts/search.py"
+python3 "$SCRIPT" "<query>" --domain <domain>
 ```
 
-If `python` is not found, try `python3`, then `py -3`. Requires Python 3.x, no external dependencies (see README for install instructions if Python is missing).
+**Sanity check first.** Before the first real query, run one trivial search (`"button" --domain ux -n 1`). If the script is missing or fails, tell the user this skill is broken and stop using it. Do not silently fall back to your own design taste and present it as skill output.
+
+If `python3` is not found, try `python`, then `py -3`. Requires Python 3.x, no external dependencies.
 
 ## Workflow
 
@@ -72,28 +76,38 @@ Extract from the user request:
 - **Style keywords**: playful, vibrant, minimal, dark mode, content-first, immersive, etc.
 - **Stack**: detect from the project — check `package.json` deps (react/next/vue/svelte/nuxt/@angular), `pubspec.yaml` (Flutter), `*.xcodeproj`/`Package.swift` (SwiftUI), `composer.json` (Laravel), or React Native markers (`app.json` + `react-native` dep). If nothing is detectable and stack guidance matters, ask the user. **Never assume a stack** — a hardcoded default silently misroutes every recommendation.
 
+### Step 1b: Existing project brand first
+
+Before generating anything, look for brand truth already in the project: `design-system/*/MASTER.md` (this skill's own persistence), design token files, `tailwind.config.*` theme, global CSS variables, an existing `frame.md` / `design.md`. If any exist, they **override** every generated recommendation. Run `--design-system` only to fill gaps the project has not decided, and never replace an existing palette or font pairing without asking the user. Framework defaults are not a brand: a repo sitting on stock shadcn/Tailwind tokens counts as undecided.
+
 ### Step 2: Generate Design System (REQUIRED for new pages/projects)
 
 Use `--design-system` when the task needs a coherent product-wide visual direction:
 
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "<product_type> <industry> <keywords>" --design-system [-p "Project Name"]
+python3 "$SCRIPT" "<product_type> <industry> <keywords>" --design-system [-p "Project Name"]
 ```
 
 This aggregates product/style/color/landing/typography matches, applies reasoning rules from `ui-reasoning.csv`, and returns pattern, style, colors, typography, effects, and anti-patterns to avoid.
 
 **Example:**
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "beauty spa wellness service" --design-system -p "Serenity Spa"
+python3 "$SCRIPT" "beauty spa wellness service" --design-system -p "Serenity Spa"
 ```
+
+### Step 2a: Choose a direction, don't accept the first result
+
+When no design spec exists yet, do not persist the first `--design-system` result. Generate 2–3 contrasting directions (different keywords, at least one dial), give each a one-line reason tied to the product, and let the user pick; then re-run the chosen direction's query with `--persist` (Step 2b). The exploration runs themselves stay unpersisted. Treat these as warning signs of a generic query, not as a verdict: stock blue (#2563EB / #3B82F6) with an orange CTA, heading font equal to body font, a landing pattern (Hero + Features + CTA) for an app screen (dashboard, settings, admin). If several appear, make the query concrete (industry, audience, mood, one reference product) before offering directions.
 
 ### Step 2b: Persist Design System (Master + Overrides Pattern)
 
 To save the design system for retrieval across sessions, add `--persist` **and always pass `--output-dir` pointed at the project root** — without it, files are written relative to whatever directory the tool happens to run from:
 
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "<query>" --design-system --persist -p "Project Name" --output-dir "<project-root>"
+python3 "$SCRIPT" "<query>" --design-system --persist -p "Project Name" --output-dir "<project-root>"
 ```
+
+Persistence is not optional: without it every session re-invents the look. Whenever `--design-system` runs to produce the project's design system, pass `--persist` with `--output-dir` at the project root — except the Step 2a exploration runs: those must not pass `--persist`, because the first persisted run creates `MASTER.md`, and a later run cannot overwrite it without `--force`.
 
 This creates:
 - `design-system/<project-slug>/MASTER.md` — Global Source of Truth
@@ -141,7 +155,7 @@ python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "<
 Three optional 1-10 sliders that tune `--design-system` output without changing your query. Add any combination of them to the same command:
 
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "<query>" --design-system --variance <1-10> --motion <1-10> --density <1-10>
+python3 "$SCRIPT" "<query>" --design-system --variance <1-10> --motion <1-10> --density <1-10>
 ```
 
 | Dial | Low (1-3) | Mid (4-7) | High (8-10) |
@@ -156,13 +170,13 @@ python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "<
 
 **Example:**
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "internal analytics dashboard" --design-system --variance 8 --motion 7 --density 8 -p "Ops Console"
+python3 "$SCRIPT" "internal analytics dashboard" --design-system --variance 8 --motion 7 --density 8 -p "Ops Console"
 ```
 
 ### Step 3: Supplement with Detailed Searches (as needed)
 
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "<keyword>" --domain <domain> [-n <max_results>]
+python3 "$SCRIPT" "<keyword>" --domain <domain> [-n <max_results>]
 ```
 
 | Need | Domain | Example |
@@ -186,7 +200,7 @@ Domain is auto-detected from the query if `--domain` is omitted — but auto-det
 ### Step 4: Stack Guidelines
 
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "<keyword>" --stack <stack>
+python3 "$SCRIPT" "<keyword>" --stack <stack>
 ```
 
 **Available stacks:** `react`, `nextjs`, `vue`, `svelte`, `astro`, `nuxtjs`, `nuxt-ui`, `angular`, `laravel`, `swiftui`, `react-native`, `flutter`, `jetpack-compose`, `html-tailwind`, `shadcn`, `threejs`, `javafx`, `wpf`, `winui`, `avalonia`, `uno`, `uwp`. Use the stack detected in Step 1.
@@ -206,13 +220,13 @@ Do not fabricate output. Instead:
 
 ```bash
 # Step 2: design system
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "AI search tool modern minimal" --design-system -p "AI Search"
+python3 "$SCRIPT" "AI search tool modern minimal" --design-system -p "AI Search"
 
 # Step 3: supplement
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "keyboard focus modal" --domain ux
+python3 "$SCRIPT" "keyboard focus modal" --domain ux
 
 # Step 4: stack guidelines
-python "${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/search.py" "suspense streaming bundle" --stack nextjs
+python3 "$SCRIPT" "suspense streaming bundle" --stack nextjs
 ```
 
 Then synthesize the design system + detailed searches and implement.

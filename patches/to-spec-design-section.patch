@@ -1,0 +1,15 @@
+diff --git a/skills/to-spec/SKILL.md b/skills/to-spec/SKILL.md
+index 3f52599..48a1d50 100644
+--- a/skills/to-spec/SKILL.md
++++ b/skills/to-spec/SKILL.md
+@@ -56,6 +56,10 @@ Do NOT include specific file paths or code snippets. They may end up being outda
+ 
+ Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts, not a working demo, just the important bits.
+ 
++## Design
++
++Required when the feature has user-facing UI; state "none" otherwise. Check the repo for an existing design system or design tokens first. One or two lines: where the design truth lives — `design-system/<slug>/MASTER.md` plus the page override for the affected pages — or the decision that no design spec exists yet and must be created before UI implementation starts (`ui-ux-pro-max`, with `--persist`).
++
+ ## Testing Decisions
+ 
+ A list of testing decisions that were made. Include:
