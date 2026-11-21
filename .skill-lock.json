@@ -15,9 +15,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
       "skillPath": "skills/web-design-guidelines/SKILL.md",
-      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "skillFolderHash": "8ff770c9b25b9fdb5a97503fc98d86b723813031",
       "installedAt": "2026-05-06T16:19:21.300Z",
-      "updatedAt": "2026-11-03T10:53:51.686Z"
+      "updatedAt": "2026-11-21T11:00:20.424Z",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb"
     },
     "building-components": {
       "source": "vercel/components.build",
@@ -52,10 +53,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heygen-com/hyperframes.git",
       "skillPath": "skills/hyperframes-cli/SKILL.md",
-      "skillFolderHash": "769751493e69d3209c17b85102ece222d1088731",
+      "skillFolderHash": "489449625dbdeb222a7db88c084f7139b933b124",
       "installedAt": "2026-05-08T09:18:03.578Z",
-      "updatedAt": "2026-11-18T11:41:15.277Z",
-      "commit": "9acf26868015f359212cb3916db69ac3f9c7aa14"
+      "updatedAt": "2026-11-21T11:00:21.023Z",
+      "commit": "a2df08e49ebb2b2d285c0e8a7c173f953b032a9d"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
