@@ -63,10 +63,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
-      "skillFolderHash": "b764c8b99b1fa4c666c802c59f02ea625502f6e4",
+      "skillFolderHash": "6170be554e51b28423752a35b727cb271ac15ecb",
       "installedAt": "2026-05-21T14:43:44.530Z",
-      "updatedAt": "2026-11-24T13:42:35.478Z",
-      "commit": "a4fc248f6136552cb881e298847abc7ddce84e6b"
+      "updatedAt": "2026-11-25T12:54:30.833Z",
+      "commit": "8db36338810d0942567b97ce439affd1619fcf31"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
@@ -217,9 +217,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/domain-modeling/SKILL.md",
-      "skillFolderHash": "ea30ee454ba264543dbe40737973b1a5afb9f0e6",
+      "skillFolderHash": "db8ef024fb9a7b2022d57289359ae96cff0d8483",
       "installedAt": "2026-07-09T12:24:03.577Z",
-      "updatedAt": "2026-09-30T09:42:15.599Z"
+      "updatedAt": "2026-11-25T12:54:30.987Z",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a"
     },
     "grilling": {
       "source": "mattpocock/skills",
