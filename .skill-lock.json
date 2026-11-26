@@ -63,10 +63,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
-      "skillFolderHash": "6170be554e51b28423752a35b727cb271ac15ecb",
+      "skillFolderHash": "62114fdb96fe3d9448ee44c8e5acdbcb4de2d71d",
       "installedAt": "2026-05-21T14:43:44.530Z",
-      "updatedAt": "2026-11-25T12:54:30.833Z",
-      "commit": "8db36338810d0942567b97ce439affd1619fcf31"
+      "updatedAt": "2026-11-26T12:32:41.968Z",
+      "commit": "a0d04109f4193a04ec6959549cd735d95ecaa90a"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
