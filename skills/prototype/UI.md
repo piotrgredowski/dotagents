@@ -51,6 +51,8 @@ Draft each variant. Hold each one to:
 - The project's component library / styling system (TailwindCSS, shadcn, MUI, plain CSS, whatever).
 - A clear exported component name, e.g. `VariantA`, `VariantB`, `VariantC`.
 
+If a design spec exists (`design-system/*/MASTER.md` or the project's tokens), every variant renders with it: variants disagree about layout, hierarchy, and primary affordance — not about palette or typography. With no spec, exploring the look is part of the prototype's job.
+
 Variants must be **structurally different**: different layout, different information hierarchy, different primary affordance, not just different colours. Three slightly-tweaked card grids isn't a UI prototype, it's wallpaper. If two drafts come out too similar, redo one with explicit "do not use a card grid" guidance.
 
 ### 3. Wire them together
@@ -103,6 +105,8 @@ Once a variant has won, capture the answer (which variant and why), then capture
 - **Sub-shape B**: promote the winning variant to a real route; drop the throwaway route and the switcher from main.
 
 The full set of variants is the primary source, so it lands on the throwaway branch, not the bin, since variant components and the switcher left in the main branch rot fast and confuse the next reader.
+
+Reconcile the winner's look with the design spec: prototype code skips polish by design, so bring stray values back to the spec tokens — or, if a deviation is a real improvement, update the page override deliberately rather than copying prototype CSS over.
 
 ## Anti-patterns
 
