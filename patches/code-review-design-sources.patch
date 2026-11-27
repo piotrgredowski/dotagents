@@ -1,10 +1,10 @@
 diff --git a/skills/code-review/SKILL.md b/skills/code-review/SKILL.md
-index e28d7ac..b7f3fc8 100644
+index 83183e0..b6cd373 100644
 --- a/skills/code-review/SKILL.md
 +++ b/skills/code-review/SKILL.md
 @@ -35,6 +35,8 @@ Look for the originating spec, in this order:
  
- Anything in the repo that documents how code should be written, such as `CODING_STANDARDS.md` or `CONTRIBUTING.md`.
+ Search the repo for every file that documents how code should be written. When `CODING_STANDARDS.md` or `CONTRIBUTING.md` exists, it must be on the list.
  
 +Design sources count as documented standards: `design-system/<slug>/MASTER.md`, the matching page override (`design-system/<slug>/pages/<page>.md`), and the project's design token files (`tailwind.config.*` theme, global CSS variables). Pass them to the Standards sub-agent, which flags UI in the diff that deviates from them: colors or fonts outside the spec, invented tokens, spacing off the declared scale. Verification on a rendered screen belongs to the `design-adherence` skill, not this review.
 +
