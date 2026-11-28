@@ -38,6 +38,31 @@ cleanup() {
 }
 trap cleanup EXIT
 
+# Re-apply local patches on top of the freshly updated skills. Patches live in
+# patches/*.patch and are generated from committed local edits to upstream
+# skills; without this step every update would silently discard those edits.
+apply_patches() {
+  local patches_dir="$repo_root/patches"
+  [[ -d "$patches_dir" ]] || return 0
+
+  local patch failed=0
+  for patch in "$patches_dir"/*.patch; do
+    [[ -e "$patch" ]] || continue
+    if git -C "$repo_root" apply --check "$patch" 2>/dev/null; then
+      git -C "$repo_root" apply "$patch"
+      echo "Applied local patch: $(basename "$patch")"
+    elif git -C "$repo_root" apply --reverse --check "$patch" 2>/dev/null; then
+      echo "Local patch already applied: $(basename "$patch")"
+    else
+      echo "ERROR: local patch no longer applies: $patch" >&2
+      echo "Upstream changed the patched region. Rebuild the patch against the new file and commit it." >&2
+      failed=1
+    fi
+  done
+
+  [[ "$failed" -eq 0 ]] || exit 1
+}
+
 if [[ ! -d "$skills_dir" || ! -f "$lockfile" ]]; then
   echo "Expected $skills_dir and $lockfile to exist." >&2
   exit 1
@@ -76,6 +101,11 @@ mv "$lockfile" "$backup_lockfile"
 mv "$new_lockfile" "$lockfile"
 mv "$skills_dir" "$backup_skills"
 mv "$staging_skills" "$skills_dir"
+
+# Runs before the backup is discarded: on failure, cleanup() restores the
+# pre-update skills instead of leaving a half-updated tree.
+apply_patches
+
 rm -rf "$backup_skills"
 backup_skills=""
 rm -f "$backup_lockfile"

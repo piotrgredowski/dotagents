@@ -1,0 +1,44 @@
+diff --git a/skills/ui-ux-pro-max/SKILL.md b/skills/ui-ux-pro-max/SKILL.md
+index 64366d5..5b354e4 100644
+--- a/skills/ui-ux-pro-max/SKILL.md
++++ b/skills/ui-ux-pro-max/SKILL.md
+@@ -42,6 +42,8 @@ Run these examples from the directory containing this SKILL.md. To keep your she
+ python scripts/search.py "<query>" --domain <domain>
+ ```
+ 
++**Sanity check first.** Before the first real query, run one trivial search (`"button" --domain ux -n 1`). If the script is missing or fails, tell the user this skill is broken and stop using it. Do not silently fall back to your own design taste and present it as skill output.
++
+ If `python` is not found, try `python3`, then `py -3`. Requires Python 3.x, no external dependencies (see README for install instructions if Python is missing).
+ 
+ ## Workflow
+@@ -72,6 +74,10 @@ Extract from the user request:
+ - **Style keywords**: playful, vibrant, minimal, dark mode, content-first, immersive, etc.
+ - **Stack**: detect from the project — check `package.json` deps (react/next/vue/svelte/nuxt/@angular), `pubspec.yaml` (Flutter), `*.xcodeproj`/`Package.swift` (SwiftUI), `composer.json` (Laravel), or React Native markers (`app.json` + `react-native` dep). If nothing is detectable and stack guidance matters, ask the user. **Never assume a stack** — a hardcoded default silently misroutes every recommendation.
+ 
++### Step 1b: Existing project brand first
++
++Before generating anything, look for brand truth already in the project: `design-system/*/MASTER.md` (this skill's own persistence), design token files, `tailwind.config.*` theme, global CSS variables, an existing `frame.md` / `design.md`. If any exist, they **override** every generated recommendation. Run `--design-system` only to fill gaps the project has not decided, and never replace an existing palette or font pairing without asking the user. Framework defaults are not a brand: a repo sitting on stock shadcn/Tailwind tokens counts as undecided.
++
+ ### Step 2: Generate Design System (REQUIRED for new pages/projects)
+ 
+ Use `--design-system` when the task needs a coherent product-wide visual direction:
+@@ -87,6 +93,10 @@ This aggregates product/style/color/landing/typography matches, applies reasonin
+ python scripts/search.py "beauty spa wellness service" --design-system -p "Serenity Spa"
+ ```
+ 
++### Step 2a: Choose a direction, don't accept the first result
++
++When no design spec exists yet, do not persist the first `--design-system` result. Generate 2–3 contrasting directions (different keywords, at least one dial), give each a one-line reason tied to the product, and let the user pick; then re-run the chosen direction's query with `--persist` (Step 2b). The exploration runs themselves stay unpersisted. Treat these as warning signs of a generic query, not as a verdict: stock blue (#2563EB / #3B82F6) with an orange CTA, heading font equal to body font, a landing pattern (Hero + Features + CTA) for an app screen (dashboard, settings, admin). If several appear, make the query concrete (industry, audience, mood, one reference product) before offering directions.
++
+ ### Step 2b: Persist Design System (Master + Overrides Pattern)
+ 
+ To save the design system for retrieval across sessions, add `--persist` **and always pass `--output-dir` pointed at the project root** — without it, files are written relative to whatever directory the tool happens to run from:
+@@ -95,6 +105,8 @@ To save the design system for retrieval across sessions, add `--persist` **and a
+ python scripts/search.py "<query>" --design-system --persist -p "Project Name" --output-dir "<project-root>"
+ ```
+ 
++Persistence is not optional: without it every session re-invents the look. Whenever `--design-system` runs to produce the project's design system, pass `--persist` with `--output-dir` at the project root — except the Step 2a exploration runs: those must not pass `--persist`, because the first persisted run creates `MASTER.md`, and a later run cannot overwrite it without `--force`.
++
+ This creates:
+ - `design-system/<project-slug>/MASTER.md` — Global Source of Truth
+ - `design-system/<project-slug>/pages/` — Folder for page-specific overrides

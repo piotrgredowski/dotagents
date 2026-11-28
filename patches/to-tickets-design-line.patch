@@ -1,0 +1,24 @@
+diff --git a/skills/to-tickets/SKILL.md b/skills/to-tickets/SKILL.md
+index 9b77a01..f9e44ff 100644
+--- a/skills/to-tickets/SKILL.md
++++ b/skills/to-tickets/SKILL.md
+@@ -76,6 +76,8 @@ Do NOT close or modify any parent issue.
+ 
+ **Status:** ready-for-agent
+ 
++**Design:** for tickets with UI, one line naming the design truth they must follow — `design-system/<slug>/MASTER.md` plus the page override for the touched pages — or the recorded decision that no spec exists. Tickets run in fresh contexts; without this line the implementer cannot know a spec exists.
++
+ - [ ] Acceptance criterion 1
+ - [ ] Acceptance criterion 2
+ 
+@@ -100,6 +102,10 @@ The end-to-end behaviour this ticket makes work, from the user's perspective, no
+ 
+ - A reference to each blocking ticket, or "None (can start immediately)". Omit this section when blockers were set as native edges.
+ 
++## Design
++
++For tickets with UI: the design truth they must follow — `design-system/<slug>/MASTER.md` plus the page override for the touched pages — or the recorded decision that no spec exists.
++
+ </issue-template>
+ 
+ In either form, avoid specific file paths or code snippets: they go stale fast. Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it and note briefly that it came from a prototype. Trim to the decision-rich parts, not a working demo, just the important bits.

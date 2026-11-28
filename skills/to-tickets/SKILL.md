@@ -76,6 +76,8 @@ Do NOT close or modify any parent issue.
 
 **Status:** ready-for-agent
 
+**Design:** for tickets with UI, one line naming the design truth they must follow — `design-system/<slug>/MASTER.md` plus the page override for the touched pages — or the recorded decision that no spec exists. Tickets run in fresh contexts; without this line the implementer cannot know a spec exists.
+
 - [ ] Acceptance criterion 1
 - [ ] Acceptance criterion 2
 
@@ -99,6 +101,10 @@ The end-to-end behaviour this ticket makes work, from the user's perspective, no
 ## Blocked by
 
 - A reference to each blocking ticket, or "None (can start immediately)". Omit this section when blockers were set as native edges.
+
+## Design
+
+For tickets with UI: the design truth they must follow — `design-system/<slug>/MASTER.md` plus the page override for the touched pages — or the recorded decision that no spec exists.
 
 </issue-template>
 
